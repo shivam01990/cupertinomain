@@ -1,0 +1,257 @@
+2014-02-20 15:51:51,356 [9] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddBlogEntryCommand
+2014-02-20 15:52:19,786 [5] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2014-02-20 15:52:30,957 [10] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2014-02-20 15:52:39,029 [5] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.DeleteBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command DeleteBlogEntryCommand
+2015-04-10 00:17:34,861 [10] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-10 00:18:07,143 [10] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddBlogEntryCommentCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddBlogEntryCommentCommand
+2015-04-10 00:18:14,470 [10] ERROR MVCBlog.Website.EmailMessageService [(null)] - Sending email failed
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: The remote name could not be resolved: 'mail.yourdomain.de'
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at MVCBlog.Website.EmailMessageService.SendMessage(String sender, String recipient, String replyto, String subject, String body) in d:\Development Area\MVCBlog-master\src\MVCBlog.Website\Code\EmailMessageService.cs:line 63
+2015-04-10 00:18:24,868 [12] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-10 00:19:12,385 [5] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-10 00:19:26,026 [12] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-10 00:19:27,522 [12] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-10 00:27:11,710 [15] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddOrUpdateSingleFeedUserCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddOrUpdateSingleFeedUserCommand
+2015-04-10 08:50:05,181 [29] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-10 08:51:02,101 [30] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntryFile, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-10 22:55:14,413 [12] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddOrUpdateSingleFeedUserCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddOrUpdateSingleFeedUserCommand
+2015-04-10 23:14:27,537 [13] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddBlogEntryCommentCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddBlogEntryCommentCommand
+2015-04-10 23:14:31,809 [25] ERROR MVCBlog.Website.EmailMessageService [(null)] - Sending email failed
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: The remote name could not be resolved: 'mail.yourdomain.de'
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at MVCBlog.Website.EmailMessageService.SendMessage(String sender, String recipient, String replyto, String subject, String body) in d:\Development Area\MVCBlog-master\src\MVCBlog.Website\Code\EmailMessageService.cs:line 63
+2015-04-11 15:43:07,045 [8] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:22:06,706 [37] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:23:49,441 [32] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:23:52,455 [48] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:25:50,066 [48] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:26:07,036 [54] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:26:23,980 [43] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:30:38,651 [35] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:30:39,404 [42] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:30:39,463 [39] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:30:39,527 [42] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:30:39,593 [36] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:30:39,649 [42] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:30:39,709 [47] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:30:39,800 [36] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:30:39,846 [39] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:30:39,905 [35] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:30:39,996 [47] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:30:40,078 [47] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:30:40,223 [47] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:30:40,282 [42] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:30:40,378 [50] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:30:40,478 [41] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:30:40,642 [47] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:30:40,743 [32] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:30:40,927 [47] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:31:00,860 [36] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:36:42,569 [20] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:37:13,798 [13] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:37:29,093 [11] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:38:45,701 [15] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:41:08,999 [38] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:41:16,426 [14] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:51:18,519 [51] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:51:48,434 [56] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:52:22,827 [7] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:56:33,478 [9] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:56:38,519 [9] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:57:05,145 [46] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 16:57:58,680 [44] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 17:15:45,369 [29] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 17:18:16,178 [10] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddOrUpdateSingleFeedUserCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddOrUpdateSingleFeedUserCommand
+2015-04-11 17:18:16,568 [21] ERROR MVCBlog.Core.Database.DatabaseContext [(null)] - Saving to database failed
+System.NotSupportedException: A second operation started on this context before a previous asynchronous operation completed. Use 'await' to ensure that any asynchronous operations have completed before calling another method on this context. Any instance members are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.ThrowingMonitor.EnsureNotEntered()
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesAsync(SaveOptions options, CancellationToken cancellationToken)
+   at System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync()
+   at MVCBlog.Core.Database.DatabaseContext.<>n__FabricatedMethoda()
+   at MVCBlog.Core.Database.DatabaseContext.<SaveChangesAsync>d__8.MoveNext() in d:\Development Area\MVCBlog-master\src\MVCBlog.Core\Database\DatabaseContext.cs:line 85
+2015-04-11 17:18:27,321 [29] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddOrUpdateSingleFeedUserCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddOrUpdateSingleFeedUserCommand
+2015-04-11 17:22:21,361 [57] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 17:23:28,786 [56] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-04-11 17:23:47,741 [57] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-04-11 17:25:02,607 [17] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-04-11 17:25:42,378 [53] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-04-11 17:25:53,579 [53] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-04-11 17:26:13,810 [52] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-04-11 17:39:57,646 [23] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddOrUpdateSingleFeedUserCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddOrUpdateSingleFeedUserCommand
+2015-04-11 17:40:06,299 [57] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddOrUpdateSingleFeedUserCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddOrUpdateSingleFeedUserCommand
+2015-04-11 17:40:31,664 [33] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddOrUpdateSingleFeedUserCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddOrUpdateSingleFeedUserCommand
+2015-04-11 17:40:34,673 [29] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddOrUpdateSingleFeedUserCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddOrUpdateSingleFeedUserCommand
+2015-04-11 17:40:40,397 [57] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddOrUpdateSingleFeedUserCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddOrUpdateSingleFeedUserCommand
+2015-04-11 17:40:48,020 [50] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddOrUpdateSingleFeedUserCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddOrUpdateSingleFeedUserCommand
+2015-04-11 18:44:05,826 [62] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 18:44:37,007 [63] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddBlogEntryCommentCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddBlogEntryCommentCommand
+2015-04-11 18:46:24,556 [62] ERROR MVCBlog.Website.EmailMessageService [(null)] - Sending email failed
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 173.201.193.229:25
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at MVCBlog.Website.EmailMessageService.SendMessage(String sender, String recipient, String replyto, String subject, String body) in d:\Development Area\MVCBlog-master\src\MVCBlog.Website\Code\EmailMessageService.cs:line 63
+2015-04-11 18:48:27,721 [62] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 18:48:32,958 [6] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 18:50:58,305 [45] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 18:51:10,108 [55] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddOrUpdateSingleFeedUserCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddOrUpdateSingleFeedUserCommand
+2015-04-11 18:55:28,645 [61] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 18:56:01,242 [20] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddBlogEntryCommentCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddBlogEntryCommentCommand
+2015-04-11 18:58:35,885 [73] ERROR MVCBlog.Website.EmailMessageService [(null)] - Sending email failed
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 173.201.192.229:25
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at MVCBlog.Website.EmailMessageService.SendMessage(String sender, String recipient, String replyto, String subject, String body) in d:\Development Area\MVCBlog-master\src\MVCBlog.Website\Code\EmailMessageService.cs:line 63
+2015-04-11 18:59:12,017 [62] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 19:00:45,181 [55] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 19:00:58,114 [62] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 19:01:21,524 [62] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddBlogEntryCommentCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddBlogEntryCommentCommand
+2015-04-11 19:02:56,269 [82] ERROR MVCBlog.Website.EmailMessageService [(null)] - Sending email failed
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 173.201.192.229:25
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at MVCBlog.Website.EmailMessageService.SendMessage(String sender, String recipient, String replyto, String subject, String body) in d:\Development Area\MVCBlog-master\src\MVCBlog.Website\Code\EmailMessageService.cs:line 64
+2015-04-11 19:08:45,320 [66] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 19:08:59,319 [21] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddBlogEntryCommentCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddBlogEntryCommentCommand
+2015-04-11 19:10:16,207 [72] ERROR MVCBlog.Website.EmailMessageService [(null)] - Sending email failed
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.IO.IOException: Unable to read data from the transport connection: net_io_connectionclosed.
+   at System.Net.Mail.SmtpReplyReaderFactory.ProcessRead(Byte[] buffer, Int32 offset, Int32 read, Boolean readLine)
+   at System.Net.Mail.SmtpReplyReaderFactory.ReadLines(SmtpReplyReader caller, Boolean oneLine)
+   at System.Net.Mail.SmtpReplyReaderFactory.ReadLine(SmtpReplyReader caller)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at MVCBlog.Website.EmailMessageService.SendMessage(String sender, String recipient, String replyto, String subject, String body) in d:\Development Area\MVCBlog-master\src\MVCBlog.Website\Code\EmailMessageService.cs:line 63
+2015-04-11 19:14:43,350 [83] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 19:15:10,447 [45] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddBlogEntryCommentCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddBlogEntryCommentCommand
+2015-04-11 19:17:32,578 [83] ERROR MVCBlog.Website.EmailMessageService [(null)] - Sending email failed
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.IO.IOException: Unable to read data from the transport connection: net_io_connectionclosed.
+   at System.Net.Mail.SmtpReplyReaderFactory.ProcessRead(Byte[] buffer, Int32 offset, Int32 read, Boolean readLine)
+   at System.Net.Mail.SmtpReplyReaderFactory.ReadLines(SmtpReplyReader caller, Boolean oneLine)
+   at System.Net.Mail.SmtpReplyReaderFactory.ReadLine(SmtpReplyReader caller)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at MVCBlog.Website.EmailMessageService.SendMessage(String sender, String recipient, String replyto, String subject, String body) in d:\Development Area\MVCBlog-master\src\MVCBlog.Website\Code\EmailMessageService.cs:line 63
+2015-04-11 19:22:13,419 [6] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 19:22:30,694 [6] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddBlogEntryCommentCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddBlogEntryCommentCommand
+2015-04-11 19:24:21,506 [11] ERROR MVCBlog.Website.EmailMessageService [(null)] - Sending email failed
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.IO.IOException: Unable to read data from the transport connection: net_io_connectionclosed.
+   at System.Net.Mail.SmtpReplyReaderFactory.ProcessRead(Byte[] buffer, Int32 offset, Int32 read, Boolean readLine)
+   at System.Net.Mail.SmtpReplyReaderFactory.ReadLines(SmtpReplyReader caller, Boolean oneLine)
+   at System.Net.Mail.SmtpReplyReaderFactory.ReadLine(SmtpReplyReader caller)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at MVCBlog.Website.EmailMessageService.SendMessage(String sender, String recipient, String replyto, String subject, String body) in d:\Development Area\MVCBlog-master\src\MVCBlog.Website\Code\EmailMessageService.cs:line 64
+2015-04-11 19:29:33,819 [25] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 19:29:52,703 [29] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddBlogEntryCommentCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddBlogEntryCommentCommand
+2015-04-11 19:30:41,867 [25] ERROR MVCBlog.Website.EmailMessageService [(null)] - Sending email failed
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.IO.IOException: Unable to read data from the transport connection: net_io_connectionclosed.
+   at System.Net.Mail.SmtpReplyReaderFactory.ProcessRead(Byte[] buffer, Int32 offset, Int32 read, Boolean readLine)
+   at System.Net.Mail.SmtpReplyReaderFactory.ReadLines(SmtpReplyReader caller, Boolean oneLine)
+   at System.Net.Mail.SmtpReplyReaderFactory.ReadLine(SmtpReplyReader caller)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at MVCBlog.Website.EmailMessageService.SendMessage(String sender, String recipient, String replyto, String subject, String body) in d:\Development Area\MVCBlog-master\src\MVCBlog.Website\Code\EmailMessageService.cs:line 64
+2015-04-11 19:36:54,215 [20] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 19:37:17,278 [27] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddBlogEntryCommentCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddBlogEntryCommentCommand
+2015-04-11 19:38:33,174 [16] ERROR MVCBlog.Website.EmailMessageService [(null)] - Sending email failed
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 173.201.193.229:25
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at MVCBlog.Website.EmailMessageService.SendMessage(String sender, String recipient, String replyto, String subject, String body) in d:\Development Area\MVCBlog-master\src\MVCBlog.Website\Code\EmailMessageService.cs:line 66
+2015-04-11 20:13:28,037 [68] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateCommand`1[[MVCBlog.Core.Entities.BlogEntry, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateCommand`1
+2015-04-11 20:18:15,946 [68] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddBlogEntryCommentCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddBlogEntryCommentCommand
+2015-04-11 20:19:15,152 [61] ERROR MVCBlog.Website.EmailMessageService [(null)] - Sending email failed
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.IO.IOException: Unable to read data from the transport connection: net_io_connectionclosed.
+   at System.Net.Mail.SmtpReplyReaderFactory.ProcessRead(Byte[] buffer, Int32 offset, Int32 read, Boolean readLine)
+   at System.Net.Mail.SmtpReplyReaderFactory.ReadLines(SmtpReplyReader caller, Boolean oneLine)
+   at System.Net.Mail.SmtpReplyReaderFactory.ReadLine(SmtpReplyReader caller)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at MVCBlog.Website.EmailMessageService.SendMessage(String sender, String recipient, String replyto, String subject, String body) in d:\Development Area\MVCBlog-master\src\MVCBlog.Website\Code\EmailMessageService.cs:line 72
+2015-04-11 21:08:37,252 [45] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddOrUpdateSingleFeedUserCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddOrUpdateSingleFeedUserCommand
+2015-04-11 21:10:48,023 [38] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddOrUpdateSingleFeedUserCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddOrUpdateSingleFeedUserCommand

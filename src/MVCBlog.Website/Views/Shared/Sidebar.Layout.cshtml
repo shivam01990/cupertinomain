@@ -1,0 +1,76 @@
+﻿@{
+    Layout = "~/Views/Shared/Site.Layout.cshtml";
+}
+@section HeaderContent {
+    @RenderSection("HeaderContent", false)
+}
+@section ScriptContent {
+    @RenderSection("ScriptContent", false)
+}
+@section HeroUnit {
+    @RenderSection("HeroUnit", false)
+}
+<div class="row">
+    <div class="col-md-9">
+        @RenderBody()
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                @Common.Tags
+            </div>
+            <div class="panel-body">
+                @{Html.RenderAction(MVC.Blog.Tags());}
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                @Common.PopularPosts
+            </div>
+            <div class="panel-body">
+                @{Html.RenderAction(MVC.Blog.PopularBlogEntries());}
+            </div>
+        </div>
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+               Advertisement
+            </div>
+            <div class="panel-body">
+                <script type="text/javascript">
+                    sa_client = "70414c5ac3d13624e9126fab7819c0f3";
+                    sa_code = "7c3bbcec5d18d6bcc698a58ef95d02bb";
+                    sa_protocol = ("https:" == document.location.protocol) ? "https" : "http";
+                    sa_pline = "0";
+                    sa_maxads = "4";
+                    sa_bgcolor = "FFFFFF";
+                    sa_bordercolor = "BDD631";
+                    sa_superbordercolor = "001EB5";
+                    sa_linkcolor = "001EB5";
+                    sa_desccolor = "000000";
+                    sa_urlcolor = "788300";
+                    sa_b = "0";
+                    sa_format = "column_160x600";
+                    sa_width = "160";
+                    sa_height = "600";
+                    sa_location = "0";
+                    sa_radius = "0";
+                    sa_borderwidth = "1";
+                    sa_font = "0";
+                    document.write(unescape("%3cscript type='text/javascript' src='" + sa_protocol + "://sa.entireweb.com/sense2.js'%3e%3c/script%3e"));
+                </script>
+
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Responsive Banner -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-4288492358616938"
+                     data-ad-slot="8173636290"
+                     data-ad-format="auto"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
