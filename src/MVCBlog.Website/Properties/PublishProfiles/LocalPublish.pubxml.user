@@ -64,7 +64,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/11/2015 21:31:02</publishTime>
     </File>
     <File Include="bin/de/MVCBlog.Website.resources.dll">
-      <publishTime>04/11/2015 21:31:04</publishTime>
+      <publishTime>04/27/2015 23:30:53</publishTime>
     </File>
     <File Include="bin/Elmah.dll">
       <publishTime>04/10/2015 00:15:59</publishTime>
@@ -88,7 +88,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/11/2015 21:31:02</publishTime>
     </File>
     <File Include="bin/MVCBlog.Website.dll">
-      <publishTime>04/11/2015 21:31:04</publishTime>
+      <publishTime>04/27/2015 23:30:53</publishTime>
     </File>
     <File Include="bin/MvcSiteMapProvider.dll">
       <publishTime>04/10/2015 00:16:05</publishTime>
@@ -988,7 +988,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/30/2014 03:43:50</publishTime>
     </File>
     <File Include="Views/Blog/Index.cshtml">
-      <publishTime>10/30/2014 03:43:50</publishTime>
+      <publishTime>04/27/2015 23:10:10</publishTime>
     </File>
     <File Include="Views/Blog/_BlogEntryHeaderControl.cshtml">
       <publishTime>10/30/2014 03:43:50</publishTime>
@@ -1048,10 +1048,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/30/2014 03:43:50</publishTime>
     </File>
     <File Include="Views/Shared/Sidebar.Layout.cshtml">
-      <publishTime>04/13/2015 22:53:32</publishTime>
+      <publishTime>04/27/2015 23:07:05</publishTime>
     </File>
     <File Include="Views/Shared/Site.Layout.cshtml">
-      <publishTime>04/13/2015 20:53:49</publishTime>
+      <publishTime>04/27/2015 23:34:14</publishTime>
     </File>
     <File Include="Views/Shared/_LogonControl.cshtml">
       <publishTime>10/30/2014 03:43:50</publishTime>

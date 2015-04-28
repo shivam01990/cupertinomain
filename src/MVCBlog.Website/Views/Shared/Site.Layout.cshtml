@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    @*Google Analytics*@
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -12,11 +13,13 @@
 
         ga('create', 'UA-58800808-1', 'auto');
         ga('send', 'pageview');
-
     </script>
+    @*End Google Analytics*@
     @Styles.Render("~/css/combined")
     @RenderSection("HeaderContent", false)
     <title>@Html.MvcSiteMap().SiteMapTitle() TechShoolin.com</title>
+    @*Bing tag*@
+    <meta name="msvalidate.01" content="C6CAC2FDCE49AB42BF357A3D12DE8AF5" />
     <meta name="robots" content="index, follow" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -40,8 +43,10 @@
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.RouteLink(@Common.Blog, MVCBlog.Website.Routes.DEFAULT, new { action = MVC.Blog.ActionNames.Index, controller = MVC.Blog.Name })</li>                   
+                    <li>@Html.RouteLink(@Common.Blog, MVCBlog.Website.Routes.DEFAULT, new { action = MVC.Blog.ActionNames.Index, controller = MVC.Blog.Name })</li>
                     <li><a href="@this.Request.Url.GetLeftPart(UriPartial.Authority)@Url.Action(MVC.Blog.Feed())" title="@Common.RssFeed">RSS</a></li>
+                    <li><a href="http://techshoolin.com/Blog/Tag/ASP.NET">ASP.NET</a></li>
+                    <li><a href="http://techshoolin.com/Blog/Tag/MVC">MVC</a></li>
                     <li>@Html.ActionLink(@Common.About, MVC.About.Index())</li>
                 </ul>
                 <form method="get" class="navbar-form navbar-right" action="@Url.RouteUrl(MVCBlog.Website.Routes.DEFAULT, new { action = MVC.Blog.ActionNames.Index, controller = MVC.Blog.Name })">
